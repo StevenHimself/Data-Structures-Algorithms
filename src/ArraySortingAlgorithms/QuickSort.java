@@ -58,7 +58,7 @@ public class QuickSort {
         return leftPointer;
     }
 
-    public static void swap(int [] inputArray, int index1, int index2){ //swamp method
+    public static void swap(int [] inputArray, int index1, int index2){ //swap method
         int temp = inputArray[index1];
         inputArray[index1] = inputArray[index2];
         inputArray[index2] = temp;
