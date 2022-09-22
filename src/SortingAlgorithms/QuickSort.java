@@ -1,4 +1,4 @@
-package ArraySortingAlgorithms;
+package SortingAlgorithms;
 import java.util.*;
 
 public class QuickSort {
