@@ -33,8 +33,8 @@ public class QuickSort {
         int leftPointer = partition(inputArray, lowIndex, highIndex, pivot);
 
         //recursive calls on left partition on right partitions
-            quickSort(inputArray, lowIndex, leftPointer - 1); //left partition
-            quickSort(inputArray, leftPointer + 1, highIndex); //right partition
+        quickSort(inputArray, lowIndex, leftPointer - 1); //left partition
+        quickSort(inputArray, leftPointer + 1, highIndex); //right partition
 
     }
 
