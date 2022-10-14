@@ -9,6 +9,7 @@ public class EmployeeVector {
 
         List<Employee> employeeList = new Vector<>(); //good to make assignments to interfaces because they can easily be changed to any
                                                       //implementation without changing code e.g. List -> Vector
+                                                      //vectors are synchronized, only use if you need a thread-safe implementation
 
         employeeList.add(new Employee("Jane", "Jones", 123));
         employeeList.add(new Employee("John", "Doe", 4567));
