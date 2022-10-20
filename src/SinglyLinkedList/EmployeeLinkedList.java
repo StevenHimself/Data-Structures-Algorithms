@@ -1,4 +1,4 @@
-package LinkedLists;
+package SinglyLinkedList;
 
 public class EmployeeLinkedList {
 
@@ -6,14 +6,14 @@ public class EmployeeLinkedList {
     private int size;
 
     //O(1) complexity
-    public void addToFront(Employee employee) { //add items to the beginning of the list to avoid traversal over array
+    public void addToFront(Employee employee) { //add employee to the beginning of the list
         EmployeeNode node = new EmployeeNode(employee); //creates node for new employee
         node.setNext(head); //set the original head to the next field
         head = node; //assign head to new employee
         size++; //tracks the size of the list
     }
 
-    public EmployeeNode removeFromFront(){
+    public EmployeeNode removeFromFront(){ //remove employee from the beginning of the list
         if (isEmpty()) { //nothing to remove
             return null;
         }
