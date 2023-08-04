@@ -14,7 +14,7 @@ public class ArrayStack {
     public void push(Employee employee) { //O(n) worst case
         if(top == stack.length) { //check to see if stack is full
             //need to resize the backing array
-            Employee[] newArray = new Employee[2 * stack.length]; //double size of original array
+            Employee[] newArray = new Employee[2 * stack.length]; //double size of original array, if memory isn't an issue to improve performance
             System.arraycopy(stack, 0, newArray, 0, stack.length); //copies elements from original array to new array
             stack = newArray;
         }
