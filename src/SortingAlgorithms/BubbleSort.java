@@ -19,7 +19,7 @@ public class BubbleSort {
 
     }
 
-    //swap method
+    //basic swap method
     public static void swap(int[] array, int i, int j) {
 
         if(i == j) return;
